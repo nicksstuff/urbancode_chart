@@ -15,7 +15,7 @@ helm package urbancodedeploy
 
 
 #CREATE INDEX.YAML
-helm repo index --url https://raw.githubusercontent.com/niklaushirt/charts/master/charts/repo/stable/ ./
+helm repo index --url https://raw.githubusercontent.com/niklaushirt/urbancode_chart/master/helm/charts/repo/stable/ ./
 
 #-----------------------------------------------------------------------------------------------------------------
 #REMOVE PACKAGES in stable
