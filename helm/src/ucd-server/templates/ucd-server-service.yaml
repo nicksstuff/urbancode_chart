@@ -8,11 +8,11 @@ metadata:
 spec:
   type: "{{ .Values.serviceType }}"
   ports:
-  - name: "8443"
+  - name: "https"
     port: 8443
     targetPort: 8443
     nodePort: 30123
-  - name: "7918"
+  - name: "agentcomm"
     port: 7918
     targetPort: 7918
   selector:
