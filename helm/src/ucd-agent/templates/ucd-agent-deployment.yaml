@@ -10,7 +10,7 @@ metadata:
     heritage: "{{ .Release.Service }}"
   name: ucd-agent
 spec:
-  replicas: {{ .Values.replicaCount_Agent }}
+  replicas: 1
   strategy: {}
   template:
     metadata:
@@ -24,6 +24,12 @@ spec:
     spec:
       containers:
       - image: mycluster.icp:8500/default/ucda:{{ .Values.tag }}
+        env:
+        - name: AGENT_NAME
+          value: {{ .Values.agent-name }}
+        - name: SERVER_IP
+          value: {{ .Values.server-ip }}
+
         name: ucd-agent
         resources: {}
       restartPolicy: Always

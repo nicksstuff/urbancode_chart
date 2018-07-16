@@ -5,9 +5,6 @@
 # Version  for UrbanCode Deploy Server
 tag: 7.0.0
 
-#Number of replicas for UrbanCode Deploy Server
-replicaCount_Agent: 1
-
 
 #Service Type for UrbanCode Deploy Server
-serviceType: "NodePort"
+serviceType: "LoadBalancer"
