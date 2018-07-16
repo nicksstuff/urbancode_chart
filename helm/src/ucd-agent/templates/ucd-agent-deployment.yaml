@@ -23,14 +23,13 @@ spec:
         heritage: "{{ .Release.Service }}"
     spec:
       containers:
-      - image: mycluster.icp:8500/default/ucda:{{ .Values.tag }}
+      - name: ucd-agent
+        image: mycluster.icp:8500/default/ucda:{{ .Values.tag }}
         env:
         - name: AGENT_NAME
           value: {{ .Values.agentname }}
         - name: SERVER_IP
           value: {{ .Values.serverip }}
-
-        name: ucd-agent
         resources: {}
       restartPolicy: Always
 status: {}
