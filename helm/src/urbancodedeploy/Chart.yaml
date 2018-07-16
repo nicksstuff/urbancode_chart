@@ -4,7 +4,7 @@ name: urbancodedeploy
 version: 7.0.0
 sources:
 - https://github.com/niklaushirt/urbancode_chart
-icon: https://github.com/niklaushirt/urbancode_chart/raw/master/icons/urbancodedeployicon.png
+icon: https://github.com/niklaushirt/urbancode_chart/raw/master/helm/charts/icons/urbancodedeployicon.png
 maintainers:
 - name: Niklaus Hirt
   email: niklaushirt@gmail.com
