@@ -26,9 +26,9 @@ spec:
       - image: mycluster.icp:8500/default/ucda:{{ .Values.tag }}
         env:
         - name: AGENT_NAME
-          value: {{ .Values.agent-name }}
+          value: {{ .Values.agentname }}
         - name: SERVER_IP
-          value: {{ .Values.server-ip }}
+          value: {{ .Values.serverip }}
 
         name: ucd-agent
         resources: {}
